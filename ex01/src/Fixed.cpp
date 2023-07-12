@@ -22,6 +22,13 @@ Fixed::Fixed(const float input) {
 	this->_i = std::roundf(input * (1 << this->_bits));
 }
 
+Fixed& Fixed::operator = (const Fixed &src)
+{
+	std::cout << "Copy assignment operator called" << std::endl;
+	this->_i = src.getRawBits();
+	return (*this);
+}
+
 /* Destructor function */
 Fixed::~Fixed() {
 	std::cout << "Destructor called" << std::endl;

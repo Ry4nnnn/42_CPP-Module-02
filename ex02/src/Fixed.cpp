@@ -20,6 +20,7 @@ Fixed::Fixed(const float input) {
 
 /* Destructor function */
 Fixed::~Fixed() {
+
 }
 
 Fixed	&Fixed::operator=(const Fixed &src) {
@@ -47,44 +48,44 @@ int	Fixed::toInt(void) const {
 	return (this->_i >> this->_bits);
 }
 
-bool	Fixed::operator>(Fixed src) const {
+bool	Fixed::operator>(const Fixed& src) const {
 	return (this->toFloat() > src.toFloat());
 }
 
-bool	Fixed::operator<(Fixed src) const {
+bool	Fixed::operator<(const Fixed& src) const {
 	return (this->toFloat() < src.toFloat());
 }
 
-bool	Fixed::operator>=(Fixed src) const {
+bool	Fixed::operator>=(const Fixed& src) const {
 	return (this->toFloat() >= src.toFloat());
 }
 
-bool	Fixed::operator<=(Fixed src) const {
+bool	Fixed::operator<=(const Fixed& src) const {
 	return (this->toFloat() <= src.toFloat());
 }
 
-bool	Fixed::operator==(Fixed src) const {
+bool	Fixed::operator==(const Fixed& src) const {
 	return (this->toFloat() == src.toFloat());
 }
 
-bool	Fixed::operator!=(Fixed src) const {
+bool	Fixed::operator!=(const Fixed& src) const {
 	return (this->toFloat() != src.toFloat());
 }
 
-Fixed	Fixed::operator+(Fixed src) const {
-	return (this->_i + src._i);
+Fixed	Fixed::operator+(const Fixed& src) const {
+	return (this->toFloat() + src.toFloat());
 }
 
-Fixed	Fixed::operator-(Fixed src) const {
-	return (this->_i - src._i);
+Fixed	Fixed::operator-(const Fixed& src) const {
+	return (this->toFloat() - src.toFloat());
 }
 
-Fixed	Fixed::operator*(Fixed src) const {
-	return (this->_i * src._i);
+Fixed	Fixed::operator*(const Fixed& src) const {
+	return (this->toFloat() * src.toFloat());
 }
 
-Fixed	Fixed::operator/(Fixed src) const {
-	return (this->_i / src._i);
+Fixed	Fixed::operator/(const Fixed& src) const {
+	return (this->toFloat() / src.toFloat());
 }
 
 Fixed	&Fixed::operator++() {

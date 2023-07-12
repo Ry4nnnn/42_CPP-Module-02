@@ -3,7 +3,7 @@ NAME = fixed
 
 CPP = c++
 
-CFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic #-fsanitize=address -g3
+CFLAGS = -Wall -Wextra -Werror -std=c++98 #-pedantic #-fsanitize=address -g3
 
 RM = rm -rf
 

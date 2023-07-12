@@ -3,8 +3,13 @@
 
 int main( void )
 {
+	//default contructor
 	Fixed a;
+
+	//copy contructor
 	Fixed b( a );
+
+	//copy assignment operator
 	Fixed c;
 
 	c = b;

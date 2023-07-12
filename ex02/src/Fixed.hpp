@@ -20,17 +20,17 @@ class Fixed {
 
 		Fixed	&operator=(const Fixed &src);
 
-		bool	operator>(Fixed src) const;
-		bool	operator<(Fixed src) const;
-		bool	operator>=(Fixed src) const;
-		bool	operator<=(Fixed src) const;
-		bool	operator==(Fixed src) const;
-		bool	operator!=(Fixed src) const;
+		bool	operator>(const Fixed& src) const;
+		bool	operator<(const Fixed& src) const;
+		bool	operator>=(const Fixed& src) const;
+		bool	operator<=(const Fixed& src) const;
+		bool	operator==(const Fixed& src) const;
+		bool	operator!=(const Fixed& src) const;
 
-		Fixed	operator+(Fixed src) const;
-		Fixed	operator-(Fixed src) const;
-		Fixed	operator*(Fixed src) const;
-		Fixed	operator/(Fixed src) const;
+		Fixed	operator+(const Fixed& src) const;
+		Fixed	operator-(const Fixed& src) const;
+		Fixed	operator*(const Fixed& src) const;
+		Fixed	operator/(const Fixed& src) const;
 
 		Fixed	&operator++();
 		Fixed	&operator--();
