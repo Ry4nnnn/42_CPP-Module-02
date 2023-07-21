@@ -1,5 +1,5 @@
 
-NAME = BSP
+NAME = bsp
 
 CPP = c++
 
